@@ -34,7 +34,7 @@ public class OrderExtInfo {
     //本单总价
     private double priceTotal;
 
-    private virtual Dictionary<string, string> insurantMap;
+    private  Dictionary<string, string> insurantMap;
     
     
     
