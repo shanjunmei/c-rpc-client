@@ -7,10 +7,10 @@
  * you entered into with Hzins,http://www.hzins.com.
  *  
  */   
-namespace com.hzins.channel.api.model.info; 
+ 
 
 using System.Collections.Generic;
-using java.util.Map;
+namespace com.hzins.channel.api.model.info{
 
 /**
  * <p>
@@ -23,10 +23,10 @@ using java.util.Map;
 public class OrderExtInfo {
     
     // 惠择投保单号
-    private String insureNum;
+    private string insureNum;
     
     // 被保人id集合
-    private IList<String> insurantIds;
+    private IList<string> insurantIds;
     
     // 被保人数量
     private int insurantCount;
@@ -34,21 +34,21 @@ public class OrderExtInfo {
     //本单总价
     private double priceTotal;
 
-    private virtual Dictionary<String, String> insurantMap;
+    private virtual Dictionary<string, string> insurantMap;
     
     
     
     
     
     
-    public virtual Dictionary<String, String> getInsurantMap() {
+    public virtual Dictionary<string, string> getInsurantMap() {
         return insurantMap;
     }
 
 
 
     
-    public virtual void setInsurantMap(Dictionary<String, String> insurantMap) {
+    public virtual void setInsurantMap(Dictionary<string, string> insurantMap) {
         this.insurantMap = insurantMap;
     }
 
@@ -65,22 +65,22 @@ public class OrderExtInfo {
     }
 
 
-    public virtual String getInsureNum() {
+    public virtual string getInsureNum() {
         return insureNum;
     }
 
     
-    public virtual void setInsureNum(String insureNum) {
+    public virtual void setInsureNum(string insureNum) {
         this.insureNum = insureNum;
     }
 
     
-    public virtual IList<String> getInsurantIds() {
+    public virtual IList<string> getInsurantIds() {
         return insurantIds;
     }
 
     
-    public virtual void setInsurantIds(IList<String> insurantIds) {
+    public virtual void setInsurantIds(IList<string> insurantIds) {
         this.insurantIds = insurantIds;
     }
 
@@ -98,4 +98,4 @@ public class OrderExtInfo {
     
     
 }
- 
+ }

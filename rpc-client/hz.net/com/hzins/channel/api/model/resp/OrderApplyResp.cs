@@ -7,13 +7,14 @@
  * you entered into with Hzins,http://www.hzins.com.
  *  
  */   
-namespace  com.hzins.channel.api.model.resp; 
+
 
 using System.Collections.Generic;
 
-using com.hzins.channel.api.model.info.OrderExtInfo;
-using com.hzins.channel.api.model.info.OrderInfo;
+using com.hzins.channel.api.model.info;
+using com.hzins.channel.api.model.info;
 
+namespace  com.hzins.channel.api.model.resp{
 /**
  * <p>
  * 
@@ -24,13 +25,13 @@ using com.hzins.channel.api.model.info.OrderInfo;
  */
 public class OrderApplyResp {
     
-    private String transNo;
+    private string transNo;
     
     // 代理商信息
     private int partnerId;  
     
     // 惠择投保单号
-    private String insureNum;
+    private string insureNum;
     
     // 保单信息
     private IList<OrderInfo> orderInfos;
@@ -54,12 +55,12 @@ public class OrderApplyResp {
     }
 
 
-    public virtual String getTransNo() {
+    public virtual string getTransNo() {
         return transNo;
     }
 
     
-    public virtual void setTransNo(String transNo) {
+    public virtual void setTransNo(string transNo) {
         this.transNo = transNo;
     }
 
@@ -73,13 +74,13 @@ public class OrderApplyResp {
     }
     
 
-    public virtual String getInsureNum() {
+    public virtual string getInsureNum() {
         return insureNum;
     }
 
 
     
-    public virtual void setInsureNum(String insureNum) {
+    public virtual void setInsureNum(string insureNum) {
         this.insureNum = insureNum;
     }
 
@@ -93,4 +94,4 @@ public class OrderApplyResp {
     }
 
 }
- 
+ }
