@@ -2,40 +2,23 @@
 
 namespace com.hzins.channel.api.model.resp
 {
-	/// <summary>
-	/// <p>
-	/// 杩斿洖鍩虹绫?
-	/// </p>
-	/// </summary>
-	/// <author>hz15031081</author>
-	/// <date>2015-4-2 涓嬪崍5:10:35</date>
-	/// <version></version>
-	public abstract class BaseResp
-	{
-		private string transNo;
+    /// <summary>
+    /// <p>
+    /// 响应基类
+    /// </p>
+    /// </summary>
+    /// <author>hz15031081</author>
+    /// <date>2015-4-2 5:10:35</date>
+    /// <version></version>
+    public abstract class BaseResp
+    {
+        //交易流水号
+        public string transNo { get; set; }
 
-		private int partnerId;
+        //渠道号
+        public int partnerId { get; set; }
 
-		// 浜ゆ槗娴佹按鍙凤紝姣忎竴鍗曡姹備氦鏄撲笉鑳界浉鍚?
-		// 浠ｇ悊鍟嗙紪鍙?
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
 
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
 
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-	}
+    }
 }
