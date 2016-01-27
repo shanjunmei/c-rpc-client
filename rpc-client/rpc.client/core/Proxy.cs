@@ -26,7 +26,7 @@ namespace rpc_client.rpc.client.core
                 
             }
 
-            
+          
             object[] param = invocation.Arguments;
 
             ServiceInfo serviceInfo = method.GetCustomAttribute<ServiceInfo>();
@@ -38,10 +38,8 @@ namespace rpc_client.rpc.client.core
 
            
             Type returnType=method.ReturnType;
-            System.Console.WriteLine(response);
+            
             invocation.ReturnValue = convert2entity(response, returnType);
-
-
 
         }
 
