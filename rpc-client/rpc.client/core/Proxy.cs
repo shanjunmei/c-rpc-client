@@ -16,6 +16,7 @@ namespace rpc_client.rpc.client.core
         public void Intercept(IInvocation invocation)
         {
             MethodInfo method = invocation.Method;
+            
             string command = method.Name;
             Api api=method.GetCustomAttribute<Api>();
             if (api != null) {
@@ -29,8 +30,11 @@ namespace rpc_client.rpc.client.core
             object[] param = invocation.Arguments;
 
             ServiceInfo serviceInfo = method.GetCustomAttribute<ServiceInfo>();
+            if (serviceInfo == null) {
+               serviceInfo= method.DeclaringType.GetCustomAttribute<ServiceInfo>();
+            }
             string baseInfo = serviceInfo.value;
-            string response=remoteInvoke(baseInfo+"/"+command, param);
+            string response=remoteInvoke(baseInfo+command, param[0]);
 
            
             Type returnType=method.ReturnType;
@@ -43,10 +47,23 @@ namespace rpc_client.rpc.client.core
 
         public string remoteInvoke(string api, object obj) {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(api);
-            //request.ContentType = "";
-            //StreamWriter writer = new StreamWriter(request.GetRequestStream(),System.Text.UTF8Encoding.UTF8);
+            request.ContentType = Configure.Request.contentType;
+            request.Method = "POST";
+            if (Configure.Request.http_connection_timeout > 0) { 
+                 request.ContinueTimeout = Configure.Request.http_connection_timeout;
+            }
+            if (Configure.Request.http_read_timeout>0)
+            {
+                 request.ReadWriteTimeout = Configure.Request.http_read_timeout;
+            }
+           
+           
 
-           // writer.Write(convert2json(obj));
+            StreamWriter writer = new StreamWriter(request.GetRequestStream(),System.Text.UTF8Encoding.UTF8);
+            string param=convert2json(obj);
+            
+            writer.Write(param);
+            writer.Flush();
 
             WebResponse response= request.GetResponse();
 

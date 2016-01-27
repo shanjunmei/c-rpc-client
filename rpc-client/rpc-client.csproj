@@ -122,13 +122,16 @@
     <Compile Include="rpc.client\core\Proxy.cs" />
     <Compile Include="rpc.client\core\ProxyFactory.cs" />
     <Compile Include="rpc.client\core\ServiceInfo.cs" />
+    <Compile Include="rpc.client\Md5.cs" />
     <Compile Include="rpc.client\OpenApiRemoteOperation.cs" />
+    <Compile Include="rpc.client\Configure.cs" />
     <Compile Include="rpc.client\test\op.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="rpc.client\core\Api.cs" />
     <Compile Include="rpc.client\core\Invoker.cs" />
     <Compile Include="rpc.client\test\model\User.cs" />
+    <Compile Include="rpc.client\test\OpenApiRemoteOperationTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

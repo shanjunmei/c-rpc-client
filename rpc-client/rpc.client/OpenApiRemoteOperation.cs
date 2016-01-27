@@ -9,10 +9,12 @@ using com.hzins.channel.api.model.common;
 using com.hzins.channel.api.model.resp;
 using com.hzins.channel.api.model.req;
 using com.hzins.channel.api.model.info;
+using rpc_client.rpc.client.core;
 
 namespace rpc_client.rpc.client
 {
-    interface OpenApiRemoteOperation
+    [ServiceInfo(Configure.Channel.baseUrl)]
+    public interface OpenApiRemoteOperation
     {
 
 
@@ -66,7 +68,7 @@ namespace rpc_client.rpc.client
          * @date 2016年1月6日 下午4:55:04
          * @version
          */
-        public CommonResult<OrderApplyResp> orderApply(OrderApplyReq req);
+         CommonResult<OrderApplyResp> orderApply(OrderApplyReq req);
 
         /**
          * 

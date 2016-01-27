@@ -1,4 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using com.hzins.channel.api.model.common;
+using com.hzins.channel.api.model.req;
+using com.hzins.channel.api.model.resp;
+using Newtonsoft.Json;
+using rpc_client.rpc.client;
 using rpc_client.rpc.client.core;
 using rpc_client.rpc.client.test;
 using rpc_client.rpc.client.test.model;
@@ -18,18 +22,11 @@ namespace rpc_client
     {
         static void Main(string[] args)
         {
-            User user = new User("", "");
-            user.id = "test";
-            user.name = "hello";
 
 
+            OpenApiRemoteOperationTest.testProductList();
 
-            op x = ProxyFactory.create<op>();
-
-
-            object ret = x.requestX(user);
-            System.Console.WriteLine(ret);
-
+          
             System.Console.ReadLine();
         }
     }
