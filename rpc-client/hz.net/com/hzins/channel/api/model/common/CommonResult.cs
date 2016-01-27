@@ -12,14 +12,12 @@ namespace com.hzins.channel.api.model.common
     /// <version/>
     public class CommonResult<T>
     {
-        private int respCode { get; set; }
+        public int respCode;
 
-        private string respMsg{get;set;}
+        public string respMsg;
 
-        private T data { get; set; }
+        public T data;
 
        
-
-
     }
 }

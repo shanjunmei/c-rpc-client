@@ -12,17 +12,17 @@ namespace com.hzins.channel.api.model.req
 	/// <version></version>
 	public class SettlementBillTotalReq
 	{
-		private string transNo;
+		public string transNo;
 
-		private int partnerId;
+		public int partnerId;
 
-		private string userId;
+		public string userId;
 
-		private string startTime;
+		public string startTime;
 
-		private string endTime;
+		public string endTime;
 
-		private string sign;
+		public string sign;
 
 		//流水号，每次请求不相�?
 		//代理商ID
@@ -30,64 +30,6 @@ namespace com.hzins.channel.api.model.req
 		//查询的申请结算开始时�?
 		//查询的申请结算结束时�?
 		//签名
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-
-		public virtual string getStartTime()
-		{
-			return startTime;
-		}
-
-		public virtual void setStartTime(string startTime)
-		{
-			this.startTime = startTime;
-		}
-
-		public virtual string getEndTime()
-		{
-			return endTime;
-		}
-
-		public virtual void setEndTime(string endTime)
-		{
-			this.endTime = endTime;
-		}
-
-		public virtual string getSign()
-		{
-			return sign;
-		}
-
-		public virtual void setSign(string sign)
-		{
-			this.sign = sign;
-		}
-
-		public virtual string getUserId()
-		{
-			return userId;
-		}
-
-		public virtual void setUserId(string userId)
-		{
-			this.userId = userId;
-		}
+		
 	}
 }

@@ -12,19 +12,9 @@ namespace com.hzins.channel.api.model.resp
 	/// <version></version>
 	public class ProductListResp : com.hzins.channel.api.model.resp.BaseResp
 	{
-		private System.Collections.Generic.IList<com.hzins.channel.api.model.info.ProductInfo
+		public System.Collections.Generic.IList<com.hzins.channel.api.model.info.ProductInfo
 			> productInfos;
 
-		public virtual System.Collections.Generic.IList<com.hzins.channel.api.model.info.ProductInfo
-			> getProductInfos()
-		{
-			return productInfos;
-		}
-
-		public virtual void setProductInfos(System.Collections.Generic.IList<com.hzins.channel.api.model.info.ProductInfo
-			> productInfos)
-		{
-			this.productInfos = productInfos;
-		}
+		
 	}
 }

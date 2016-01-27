@@ -4,21 +4,21 @@ namespace com.hzins.channel.api.model.req
 {
     /// <summary>
     /// <p>
-    /// ç¬¬ä¸‰æ–¹è¯·æ±‚åŸºç¡?ç±?
+    /// ÇëÇó»ùÀà
     /// </p>
     /// </summary>
     /// <author>hz15031081</author>
-    /// <date>2015-4-2 ä¸‹åˆ5:10:35</date>
+    /// <date>2015-4-2 5:10:35</date>
     /// <version></version>
     public abstract class BaseReq
     {
-        public string transNo { get; set; }
+        public string transNo;
 
-        public int partnerId { get; set; }
+        public int partnerId;
 
-        public string sign { get; set; }
+        public string sign;
 
-        public string userId { get; set; }
+        public string userId;
 
     }
 }

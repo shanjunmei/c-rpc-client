@@ -13,49 +13,49 @@ namespace com.hzins.channel.api.model
     {
         #region field
 
-        private string _payUrl;
+        public string payUrl;
 
-		private int _onliePaymnetId;
+		public int onliePaymnetId;
 
-		private string _bsId;
+		public string bsId;
 
-		private string _price;
+		public string price;
 
-		private int _partnerId;
+		public int partnerId;
 
-		private int _consumeType;
+		public int consumeType;
 
-		private int _companyId;
+		public int companyId;
 
-		private int _productId;
+		public int productId;
 
-		private string _productName;
+		public string productName;
 
-		private int _bankId;
+		public int bankId;
 
-		private string _notifyUrl;
+		public string notifyUrl;
 
-		private string _isNoDeal;
+		public string isNoDeal;
 
-		private string _deadline;
+		public string deadline;
 
-		private string _sign;
+		public string sign;
 
-		private string _payOrderNumber;
+		public string payOrderNumber;
 
-		private string _payToInsurer;
+		public string payToInsurer;
 
-		private string _ip;
+		public string ip;
 
-		private string _traceId;
+		public string traceId;
 
-		private string _openId;
+		public string openId;
 
-		private string _descript;
+		public string descript;
 
-		private string _wxPayType;
+		public string wxPayType;
 
-		private string _serviceNotifyUrl;
+		public string serviceNotifyUrl;
 
         #endregion
 

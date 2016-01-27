@@ -12,88 +12,20 @@ namespace com.hzins.channel.api.model.info
 	/// <version></version>
 	public class SettlementDetailInfo
 	{
-		private string email;
+		public string email;
 
-		private string payDateTime;
+		public string payDateTime;
 
-		private string insureNum;
+		public string insureNum;
 
-		private string productName;
+		public string productName;
 
-		private double originalPrice;
+		public double originalPrice;
 
-		private double price;
+		public double price;
 
-		private double income;
+		public double income;
 
-		public virtual string getEmail()
-		{
-			return email;
-		}
-
-		public virtual void setEmail(string email)
-		{
-			this.email = email;
-		}
-
-		public virtual string getInsureNum()
-		{
-			return insureNum;
-		}
-
-		public virtual void setInsureNum(string insureNum)
-		{
-			this.insureNum = insureNum;
-		}
-
-		public virtual string getProductName()
-		{
-			return productName;
-		}
-
-		public virtual void setProductName(string productName)
-		{
-			this.productName = productName;
-		}
-
-		public virtual double getOriginalPrice()
-		{
-			return originalPrice;
-		}
-
-		public virtual void setOriginalPrice(double originalPrice)
-		{
-			this.originalPrice = originalPrice;
-		}
-
-		public virtual double getPrice()
-		{
-			return price;
-		}
-
-		public virtual void setPrice(double price)
-		{
-			this.price = price;
-		}
-
-		public virtual double getIncome()
-		{
-			return income;
-		}
-
-		public virtual void setIncome(double income)
-		{
-			this.income = income;
-		}
-
-		public virtual string getPayDateTime()
-		{
-			return payDateTime;
-		}
-
-		public virtual void setPayDateTime(string payDateTime)
-		{
-			this.payDateTime = payDateTime;
-		}
+	
 	}
 }

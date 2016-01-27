@@ -12,67 +12,19 @@ namespace com.hzins.channel.api.model.resp
 	/// <version></version>
 	public class SettlementBillTotalResp
 	{
-		private string transNo;
+		public string transNo;
 
-		private int partnerId;
+		public int partnerId;
 
-		private double payed;
+		public double payed;
 
-		private double unPayed;
+		public double unPayed;
 
-		private double allowPayed;
+		public double allowPayed;
 
 		//已结�?
 		//未结�?
 		//当前可结�?(不会根据时间条件查询)
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-
-		public virtual double getPayed()
-		{
-			return payed;
-		}
-
-		public virtual void setPayed(double payed)
-		{
-			this.payed = payed;
-		}
-
-		public virtual double getUnPayed()
-		{
-			return unPayed;
-		}
-
-		public virtual void setUnPayed(double unPayed)
-		{
-			this.unPayed = unPayed;
-		}
-
-		public virtual double getAllowPayed()
-		{
-			return allowPayed;
-		}
-
-		public virtual void setAllowPayed(double allowPayed)
-		{
-			this.allowPayed = allowPayed;
-		}
+		
 	}
 }

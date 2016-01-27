@@ -12,43 +12,13 @@ namespace com.hzins.channel.api.model.resp
 	/// <version></version>
 	public class IncomeDetailResp
 	{
-		private string transNo;
+		public string transNo;
 
-		private int partnerId;
+		public int partnerId;
 
-		private System.Collections.Generic.IList<com.hzins.channel.api.model.info.IncomeDetailInfo
+		public System.Collections.Generic.IList<com.hzins.channel.api.model.info.IncomeDetailInfo
 			> incomeDetailInfos;
 
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-
-		public virtual System.Collections.Generic.IList<com.hzins.channel.api.model.info.IncomeDetailInfo
-			> getIncomeDetailInfos()
-		{
-			return incomeDetailInfos;
-		}
-
-		public virtual void setIncomeDetailInfos(System.Collections.Generic.IList<com.hzins.channel.api.model.info.IncomeDetailInfo
-			> incomeDetailInfos)
-		{
-			this.incomeDetailInfos = incomeDetailInfos;
-		}
+		
 	}
 }

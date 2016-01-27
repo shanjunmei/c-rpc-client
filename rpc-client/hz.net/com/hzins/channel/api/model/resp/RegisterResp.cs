@@ -11,40 +11,12 @@ namespace com.hzins.channel.api.model.resp
 	/// <version></version>
 	public class RegisterResp
 	{
-		private string transNo;
+		public string transNo;
 
-		private int partnerId;
+		public int partnerId;
 
-		private string usreId;
+		public string usreId;
 
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-
-		public virtual string getUsreId()
-		{
-			return usreId;
-		}
-
-		public virtual void setUsreId(string usreId)
-		{
-			this.usreId = usreId;
-		}
+		
 	}
 }

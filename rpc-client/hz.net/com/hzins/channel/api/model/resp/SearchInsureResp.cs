@@ -12,46 +12,16 @@ namespace com.hzins.channel.api.model.resp
 	/// <version></version>
 	public class SearchInsureResp
 	{
-		private int partnerId;
+		public int partnerId;
 
-		private string transNo;
+		public string transNo;
 
-		private System.Collections.Generic.IList<com.hzins.channel.api.model.info.OrderDetailInfo
+		public System.Collections.Generic.IList<com.hzins.channel.api.model.info.OrderDetailInfo
 			> orderDetailInfos;
 
 		//代理商编�?
 		//交易流水号，每一单请求交易不能相�?
 		//保单列表
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual System.Collections.Generic.IList<com.hzins.channel.api.model.info.OrderDetailInfo
-			> getOrderDetailInfos()
-		{
-			return orderDetailInfos;
-		}
-
-		public virtual void setOrderDetailInfos(System.Collections.Generic.IList<com.hzins.channel.api.model.info.OrderDetailInfo
-			> orderDetailInfos)
-		{
-			this.orderDetailInfos = orderDetailInfos;
-		}
+		
 	}
 }

@@ -12,27 +12,27 @@ namespace com.hzins.channel.api.model.info
 	/// <version/>
 	public class HealthInfo
 	{
-		private string insurePassword;
+		public string insurePassword;
 
-		private string backPayAccount;
+		public string backPayAccount;
 
-		private string backPayName;
+		public string backPayName;
 
-		private int backPayBank;
+		public int backPayBank;
 
-		private string backPayBankName;
+		public string backPayBankName;
 
-		private double insuredYearlyIncome;
+		public double insuredYearlyIncome;
 
-		private int renewalPayBank;
+		public int renewalPayBank;
 
-		private string renewalPayBankName;
+		public string renewalPayBankName;
 
-		private string renewalPayName;
+		public string renewalPayName;
 
-		private string renewalPayAccount;
+		public string renewalPayAccount;
 
-		private int notifyAnswerId;
+		public int notifyAnswerId;
 
 		//保单密码
 		// 持卡人卡�?
@@ -45,114 +45,6 @@ namespace com.hzins.channel.api.model.info
 		//续期缴费户名
 		//续期缴费账号
 		//健康告知ID
-		public virtual string getInsurePassword()
-		{
-			return insurePassword;
-		}
-
-		public virtual void setInsurePassword(string insurePassword)
-		{
-			this.insurePassword = insurePassword;
-		}
-
-		public virtual string getBackPayAccount()
-		{
-			return backPayAccount;
-		}
-
-		public virtual void setBackPayAccount(string backPayAccount)
-		{
-			this.backPayAccount = backPayAccount;
-		}
-
-		public virtual string getBackPayName()
-		{
-			return backPayName;
-		}
-
-		public virtual void setBackPayName(string backPayName)
-		{
-			this.backPayName = backPayName;
-		}
-
-		public virtual int getBackPayBank()
-		{
-			return backPayBank;
-		}
-
-		public virtual void setBackPayBank(int backPayBank)
-		{
-			this.backPayBank = backPayBank;
-		}
-
-		public virtual string getBackPayBankName()
-		{
-			return backPayBankName;
-		}
-
-		public virtual void setBackPayBankName(string backPayBankName)
-		{
-			this.backPayBankName = backPayBankName;
-		}
-
-		public virtual double getInsuredYearlyIncome()
-		{
-			return insuredYearlyIncome;
-		}
-
-		public virtual void setInsuredYearlyIncome(double insuredYearlyIncome)
-		{
-			this.insuredYearlyIncome = insuredYearlyIncome;
-		}
-
-		public virtual int getRenewalPayBank()
-		{
-			return renewalPayBank;
-		}
-
-		public virtual void setRenewalPayBank(int renewalPayBank)
-		{
-			this.renewalPayBank = renewalPayBank;
-		}
-
-		public virtual string getRenewalPayBankName()
-		{
-			return renewalPayBankName;
-		}
-
-		public virtual void setRenewalPayBankName(string renewalPayBankName)
-		{
-			this.renewalPayBankName = renewalPayBankName;
-		}
-
-		public virtual string getRenewalPayName()
-		{
-			return renewalPayName;
-		}
-
-		public virtual void setRenewalPayName(string renewalPayName)
-		{
-			this.renewalPayName = renewalPayName;
-		}
-
-		public virtual string getRenewalPayAccount()
-		{
-			return renewalPayAccount;
-		}
-
-		public virtual void setRenewalPayAccount(string renewalPayAccount)
-		{
-			this.renewalPayAccount = renewalPayAccount;
-		}
-
-		public virtual int getNotifyAnswerId()
-		{
-			return notifyAnswerId;
-		}
-
-		public virtual void setNotifyAnswerId(int notifyAnswerId)
-		{
-			this.notifyAnswerId = notifyAnswerId;
-		}
+		
 	}
 }

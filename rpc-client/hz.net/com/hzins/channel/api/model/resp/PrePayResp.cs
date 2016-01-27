@@ -12,41 +12,12 @@ namespace com.hzins.channel.api.model.resp
 	/// <version></version>
 	public class PrePayResp
 	{
-		private string transNo;
+		public string transNo;
 
-		private string orderNum;
+		public string orderNum;
 
-		private com.hzins.channel.api.model.PrePayParam prePayParam;
+		public com.hzins.channel.api.model.PrePayParam prePayParam;
 
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual string getOrderNum()
-		{
-			return orderNum;
-		}
-
-		public virtual void setOrderNum(string orderNum)
-		{
-			this.orderNum = orderNum;
-		}
-
-		public virtual com.hzins.channel.api.model.PrePayParam getPrePayParam()
-		{
-			return prePayParam;
-		}
-
-		public virtual void setPrePayParam(com.hzins.channel.api.model.PrePayParam prePayParam
-			)
-		{
-			this.prePayParam = prePayParam;
-		}
+		
 	}
 }

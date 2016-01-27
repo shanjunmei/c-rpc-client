@@ -11,116 +11,28 @@ namespace com.hzins.channel.api.model.req
 	/// <version/>
 	public class OrderDetailReq
 	{
-		private string transNo;
+		public string transNo;
 
-		private int partnerId;
+		public int partnerId;
 
-		private string insureNum;
+		public string insureNum;
 
-		private string sign;
+		public string sign;
 
-		private string userId;
+		public string userId;
 
-		private string idCard;
+		public string idCard;
 
-		private string email;
+		public string email;
 
-		private int pageNum;
+		public int pageNum;
 
-		private int pageSize;
+		public int pageSize;
 
 		// 投保人证件号
 		// 投保人邮�?
 		// 当前�?
 		// 每页显示数据
-		public virtual int getPageNum()
-		{
-			return pageNum;
-		}
-
-		public virtual void setPageNum(int pageNum)
-		{
-			this.pageNum = pageNum;
-		}
-
-		public virtual int getPageSize()
-		{
-			return pageSize;
-		}
-
-		public virtual void setPageSize(int pageSize)
-		{
-			this.pageSize = pageSize;
-		}
-
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-
-		public virtual string getInsureNum()
-		{
-			return insureNum;
-		}
-
-		public virtual string getIdCard()
-		{
-			return idCard;
-		}
-
-		public virtual void setIdCard(string idCard)
-		{
-			this.idCard = idCard;
-		}
-
-		public virtual string getEmail()
-		{
-			return email;
-		}
-
-		public virtual void setEmail(string email)
-		{
-			this.email = email;
-		}
-
-		public virtual void setInsureNum(string insureNum)
-		{
-			this.insureNum = insureNum;
-		}
-
-		public virtual string getSign()
-		{
-			return sign;
-		}
-
-		public virtual void setSign(string sign)
-		{
-			this.sign = sign;
-		}
-
-		public virtual string getUserId()
-		{
-			return userId;
-		}
-
-		public virtual void setUserId(string userId)
-		{
-			this.userId = userId;
-		}
+	
 	}
 }

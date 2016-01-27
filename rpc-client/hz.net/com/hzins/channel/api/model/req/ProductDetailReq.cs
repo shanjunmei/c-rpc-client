@@ -12,30 +12,12 @@ namespace com.hzins.channel.api.model.req
 	/// <version></version>
 	public class ProductDetailReq : com.hzins.channel.api.model.req.BaseReq
 	{
-		private int productId;
+		public int productId;
 
-		private int planId;
+		public int planId;
 
 		//产品ID
 		//产品计划Id
-		public virtual int getProductId()
-		{
-			return productId;
-		}
-
-		public virtual void setProductId(int productId)
-		{
-			this.productId = productId;
-		}
-
-		public virtual int getPlanId()
-		{
-			return planId;
-		}
-
-		public virtual void setPlanId(int planId)
-		{
-			this.planId = planId;
-		}
+		
 	}
 }

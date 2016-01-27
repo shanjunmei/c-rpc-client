@@ -12,21 +12,21 @@ namespace com.hzins.channel.api.model.info
 	/// <version/>
 	public class InsureBeneficiaryInfo
 	{
-		private string birthdate;
+		public string birthdate;
 
-		private string cardNumber;
+		public string cardNumber;
 
-		private int cardTypeId;
+		public int cardTypeId;
 
-		private string cName;
+		public string cName;
 
-		private int relationId;
+		public int relationId;
 
-		private short serial;
+		public short serial;
 
-		private bool sex;
+		public bool sex;
 
-		private double proportion;
+		public double proportion;
 
 		//受益人生�?
 		//证件号码
@@ -35,84 +35,6 @@ namespace com.hzins.channel.api.model.info
 		//与被保人关系
 		//受益人顺�?
 		//受益人比�?
-		public virtual string getBirthdate()
-		{
-			return birthdate;
-		}
-
-		public virtual void setBirthdate(string birthdate)
-		{
-			this.birthdate = birthdate;
-		}
-
-		public virtual string getCardNumber()
-		{
-			return cardNumber;
-		}
-
-		public virtual void setCardNumber(string cardNumber)
-		{
-			this.cardNumber = cardNumber;
-		}
-
-		public virtual int getCardTypeId()
-		{
-			return cardTypeId;
-		}
-
-		public virtual void setCardTypeId(int cardTypeId)
-		{
-			this.cardTypeId = cardTypeId;
-		}
-
-		public virtual string getcName()
-		{
-			return cName;
-		}
-
-		public virtual void setcName(string cName)
-		{
-			this.cName = cName;
-		}
-
-		public virtual int getRelationId()
-		{
-			return relationId;
-		}
-
-		public virtual void setRelationId(int relationId)
-		{
-			this.relationId = relationId;
-		}
-
-		public virtual short getSerial()
-		{
-			return serial;
-		}
-
-		public virtual void setSerial(short serial)
-		{
-			this.serial = serial;
-		}
-
-		public virtual bool isSex()
-		{
-			return sex;
-		}
-
-		public virtual void setSex(bool sex)
-		{
-			this.sex = sex;
-		}
-
-		public virtual double getProportion()
-		{
-			return proportion;
-		}
-
-		public virtual void setProportion(double proportion)
-		{
-			this.proportion = proportion;
-		}
+		
 	}
 }

@@ -11,29 +11,29 @@ namespace com.hzins.channel.api.model.req
 	/// <version/>
 	public class OrderSearchReq
 	{
-		private int partnerId;
+		public int partnerId;
 
-		private string transNo;
+		public string transNo;
 
-		private string sign;
+		public string sign;
 
-		private int pageNum;
+		public int pageNum;
 
-		private int pageSize;
+		public int pageSize;
 
-		private string startTime;
+		public string startTime;
 
-		private string endTime;
+		public string endTime;
 
-		private string applicant;
+		public string applicant;
 
-		private string insurant;
+		public string insurant;
 
-		private string idCard;
+		public string idCard;
 
-		private string userId;
+		public string userId;
 
-		private System.Collections.Generic.IList<string> insureNums;
+		public System.Collections.Generic.IList<string> insureNums;
 
 		// 代理商编�?
 		// 交易流水号，每一单请求交易不能相�?
@@ -47,125 +47,6 @@ namespace com.hzins.channel.api.model.req
 		//投保人证件号�?
 		//userId
 		// 多个投保单号
-		public virtual System.Collections.Generic.IList<string> getInsureNums()
-		{
-			return insureNums;
-		}
-
-		public virtual void setInsureNums(System.Collections.Generic.IList<string> insureNums
-			)
-		{
-			this.insureNums = insureNums;
-		}
-
-		public virtual string getUserId()
-		{
-			return userId;
-		}
-
-		public virtual void setUserId(string userId)
-		{
-			this.userId = userId;
-		}
-
-		public virtual string getStartTime()
-		{
-			return startTime;
-		}
-
-		public virtual void setStartTime(string startTime)
-		{
-			this.startTime = startTime;
-		}
-
-		public virtual string getEndTime()
-		{
-			return endTime;
-		}
-
-		public virtual void setEndTime(string endTime)
-		{
-			this.endTime = endTime;
-		}
-
-		public virtual string getApplicant()
-		{
-			return applicant;
-		}
-
-		public virtual void setApplicant(string applicant)
-		{
-			this.applicant = applicant;
-		}
-
-		public virtual string getInsurant()
-		{
-			return insurant;
-		}
-
-		public virtual void setInsurant(string insurant)
-		{
-			this.insurant = insurant;
-		}
-
-		public virtual string getIdCard()
-		{
-			return idCard;
-		}
-
-		public virtual void setIdCard(string idCard)
-		{
-			this.idCard = idCard;
-		}
-
-		public virtual int getPageNum()
-		{
-			return pageNum;
-		}
-
-		public virtual void setPageNum(int pageNum)
-		{
-			this.pageNum = pageNum;
-		}
-
-		public virtual int getPageSize()
-		{
-			return pageSize;
-		}
-
-		public virtual void setPageSize(int pageSize)
-		{
-			this.pageSize = pageSize;
-		}
-
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual string getSign()
-		{
-			return sign;
-		}
-
-		public virtual void setSign(string sign)
-		{
-			this.sign = sign;
-		}
+		
 	}
 }

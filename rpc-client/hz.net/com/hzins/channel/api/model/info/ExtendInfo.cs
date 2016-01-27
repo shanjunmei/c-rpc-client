@@ -11,53 +11,15 @@ namespace com.hzins.channel.api.model.info
 	/// <version></version>
 	public class ExtendInfo
 	{
-		private string userId;
+        // 用户在代理商系统中的唯一标识
+        public string userId;
 
-		private string email;
+        public string email;
 
-		private string userName;
+        public string userName;
 
-		private string phone;
+        public string phone;
 
-		// 用户在代理商系统中的唯一标识
-		public virtual string getUserId()
-		{
-			return userId;
-		}
-
-		public virtual void setUserId(string userId)
-		{
-			this.userId = userId;
-		}
-
-		public virtual string getEmail()
-		{
-			return email;
-		}
-
-		public virtual void setEmail(string email)
-		{
-			this.email = email;
-		}
-
-		public virtual string getUserName()
-		{
-			return userName;
-		}
-
-		public virtual void setUserName(string userName)
-		{
-			this.userName = userName;
-		}
-
-		public virtual string getPhone()
-		{
-			return phone;
-		}
-
-		public virtual void setPhone(string phone)
-		{
-			this.phone = phone;
-		}
+		
 	}
 }

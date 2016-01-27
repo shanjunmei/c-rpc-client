@@ -9,40 +9,40 @@ namespace com.hzins.channel.api.model.req
 	/// <author>hz15031081</author>
 	/// <date>2015-5-8 上午11:32:45</date>
 	/// <version/>
-	[System.Serializable]
+	
 	public class RegisterReq
 	{
-		private const long serialVersionUID = 7431287304382522749L;
 
-		private string transNo;
 
-		private int partnerId;
+		public string transNo;
 
-		private int channelType;
+		public int partnerId;
 
-		private int webType;
+		public int channelType;
 
-		private string userId;
+		public int webType;
 
-		private string email;
+		public string userId;
 
-		private string loginPassWord;
+		public string email;
 
-		private string contactName;
+		public string loginPassWord;
 
-		private string contactNumber;
+		public string contactName;
 
-		private string sign;
+		public string contactNumber;
 
-		private int feetemplateId;
+		public string sign;
 
-		private string expandEmployeeName;
+		public int feetemplateId;
 
-		private int expandEmployeeId;
+		public string expandEmployeeName;
 
-		private string companyCode;
+		public int expandEmployeeId;
 
-		private string companyName;
+		public string companyCode;
+
+		public string companyName;
 
 		// 渠道类型 0：个�? 1：公�?  (必填)
 		// 1:户外=1 2:旅行�? 3:签证机构 4:旅游网站 0:其他(必填)
@@ -57,154 +57,6 @@ namespace com.hzins.channel.api.model.req
 		//拓展人员ID
 		//公司代码
 		//公司名称
-		public virtual string getCompanyCode()
-		{
-			return companyCode;
-		}
-
-		public virtual void setCompanyCode(string companyCode)
-		{
-			this.companyCode = companyCode;
-		}
-
-		public virtual string getCompanyName()
-		{
-			return companyName;
-		}
-
-		public virtual void setCompanyName(string companyName)
-		{
-			this.companyName = companyName;
-		}
-
-		public virtual string getExpandEmployeeName()
-		{
-			return expandEmployeeName;
-		}
-
-		public virtual void setExpandEmployeeName(string expandEmployeeName)
-		{
-			this.expandEmployeeName = expandEmployeeName;
-		}
-
-		public virtual int getExpandEmployeeId()
-		{
-			return expandEmployeeId;
-		}
-
-		public virtual void setExpandEmployeeId(int expandEmployeeId)
-		{
-			this.expandEmployeeId = expandEmployeeId;
-		}
-
-		public virtual int getFeetemplateId()
-		{
-			return feetemplateId;
-		}
-
-		public virtual void setFeetemplateId(int feetemplateId)
-		{
-			this.feetemplateId = feetemplateId;
-		}
-
-		public virtual string getSign()
-		{
-			return sign;
-		}
-
-		public virtual void setSign(string sign)
-		{
-			this.sign = sign;
-		}
-
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-
-		public virtual int getChannelType()
-		{
-			return channelType;
-		}
-
-		public virtual void setChannelType(int channelType)
-		{
-			this.channelType = channelType;
-		}
-
-		public virtual int getWebType()
-		{
-			return webType;
-		}
-
-		public virtual void setWebType(int webType)
-		{
-			this.webType = webType;
-		}
-
-		public virtual string getUserId()
-		{
-			return userId;
-		}
-
-		public virtual void setUserId(string userId)
-		{
-			this.userId = userId;
-		}
-
-		public virtual string getEmail()
-		{
-			return email;
-		}
-
-		public virtual void setEmail(string email)
-		{
-			this.email = email;
-		}
-
-		public virtual string getLoginPassWord()
-		{
-			return loginPassWord;
-		}
-
-		public virtual void setLoginPassWord(string loginPassWord)
-		{
-			this.loginPassWord = loginPassWord;
-		}
-
-		public virtual string getContactName()
-		{
-			return contactName;
-		}
-
-		public virtual void setContactName(string contactName)
-		{
-			this.contactName = contactName;
-		}
-
-		public virtual string getContactNumber()
-		{
-			return contactNumber;
-		}
-
-		public virtual void setContactNumber(string contactNumber)
-		{
-			this.contactNumber = contactNumber;
-		}
+		
 	}
 }

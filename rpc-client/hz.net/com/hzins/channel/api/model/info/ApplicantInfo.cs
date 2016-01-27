@@ -12,134 +12,37 @@ namespace com.hzins.channel.api.model.info
 	/// <version></version>
 	public class ApplicantInfo
 	{
-		private string cName;
+        // 投保人姓名
+        public string cName;
 
-		private string eName;
+        // 投保人英文名，境外险必填
+        public string eName;
 
-		private int cardType;
+        // 投保人证件类型
+        public int cardType;
 
-		private string cardCode;
+        // 证件号码
+        public string cardCode;
 
-		private int sex;
+        // 性别 0女 1男
+        public int sex;
 
-		private string birthday;
+        // 出生日期
+        public string birthday;
 
-		private string mobile;
+        // 手机号码
+        public string mobile;
 
-		private string email;
+        // 电子邮箱
+        public string email;
 
-		private string jobInfo;
+        // 职业信息
+        public string jobInfo;
 
-		private string country;
+        //国籍
+        public string country;
 
-		// 投保人姓名
-		// 投保人英文名，境外险必填
-		// 投保人证件类型
-		// 证件号码
-		// 性别 0女 1男
-		// 出生日期
-		// 手机号码
-		// 电子邮箱
-		// 职业信息
-		//国籍
-		public virtual string getCountry()
-		{
-			return country;
-		}
-
-		public virtual void setCountry(string country)
-		{
-			this.country = country;
-		}
-
-		public virtual string getcName()
-		{
-			return cName;
-		}
-
-		public virtual void setcName(string cName)
-		{
-			this.cName = cName;
-		}
-
-		public virtual string geteName()
-		{
-			return eName;
-		}
-
-		public virtual void seteName(string eName)
-		{
-			this.eName = eName;
-		}
-
-		public virtual int getCardType()
-		{
-			return cardType;
-		}
-
-		public virtual void setCardType(int cardType)
-		{
-			this.cardType = cardType;
-		}
-
-		public virtual string getCardCode()
-		{
-			return cardCode;
-		}
-
-		public virtual void setCardCode(string cardCode)
-		{
-			this.cardCode = cardCode;
-		}
-
-		public virtual int getSex()
-		{
-			return sex;
-		}
-
-		public virtual void setSex(int sex)
-		{
-			this.sex = sex;
-		}
-
-		public virtual string getBirthday()
-		{
-			return birthday;
-		}
-
-		public virtual void setBirthday(string birthday)
-		{
-			this.birthday = birthday;
-		}
-
-		public virtual string getMobile()
-		{
-			return mobile;
-		}
-
-		public virtual void setMobile(string mobile)
-		{
-			this.mobile = mobile;
-		}
-
-		public virtual string getEmail()
-		{
-			return email;
-		}
-
-		public virtual void setEmail(string email)
-		{
-			this.email = email;
-		}
-
-		public virtual string getJobInfo()
-		{
-			return jobInfo;
-		}
-
-		public virtual void setJobInfo(string jobInfo)
-		{
-			this.jobInfo = jobInfo;
-		}
+		
+		
 	}
 }

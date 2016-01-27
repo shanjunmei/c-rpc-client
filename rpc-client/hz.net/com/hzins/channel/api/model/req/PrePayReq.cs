@@ -12,25 +12,25 @@ namespace com.hzins.channel.api.model.req
 	/// <version></version>
 	public class PrePayReq
 	{
-		private string transNo;
+		public string transNo;
 
-		private int partnerId;
+		public int partnerId;
 
-		private string userId;
+		public string userId;
 
-		private string caseCode;
+		public string caseCode;
 
-		private string sign;
+		public string sign;
 
-		private string orderNum;
+		public string orderNum;
 
-		private int onliePaymnetId;
+		public int onliePaymnetId;
 
-		private int bankId;
+		public int bankId;
 
-		private string pageNoticeUrl;
+		public string pageNoticeUrl;
 
-		private string price;
+		public string price;
 
 		// 交易流水号，每一单请求交易不能相�?
 		// 代理商编�?
@@ -42,104 +42,6 @@ namespace com.hzins.channel.api.model.req
 		// 银行标识，当值大�?0时，会直接跳转到相应的银行页�?
 		// 页面返回地址
 		// 支付金额（单位：元）
-		public virtual string getTransNo()
-		{
-			return transNo;
-		}
-
-		public virtual void setTransNo(string transNo)
-		{
-			this.transNo = transNo;
-		}
-
-		public virtual int getPartnerId()
-		{
-			return partnerId;
-		}
-
-		public virtual void setPartnerId(int partnerId)
-		{
-			this.partnerId = partnerId;
-		}
-
-		public virtual string getCaseCode()
-		{
-			return caseCode;
-		}
-
-		public virtual void setCaseCode(string caseCode)
-		{
-			this.caseCode = caseCode;
-		}
-
-		public virtual string getSign()
-		{
-			return sign;
-		}
-
-		public virtual void setSign(string sign)
-		{
-			this.sign = sign;
-		}
-
-		public virtual string getOrderNum()
-		{
-			return orderNum;
-		}
-
-		public virtual void setOrderNum(string orderNum)
-		{
-			this.orderNum = orderNum;
-		}
-
-		public virtual int getOnliePaymnetId()
-		{
-			return onliePaymnetId;
-		}
-
-		public virtual void setOnliePaymnetId(int onliePaymnetId)
-		{
-			this.onliePaymnetId = onliePaymnetId;
-		}
-
-		public virtual int getBankId()
-		{
-			return bankId;
-		}
-
-		public virtual void setBankId(int bankId)
-		{
-			this.bankId = bankId;
-		}
-
-		public virtual string getPageNoticeUrl()
-		{
-			return pageNoticeUrl;
-		}
-
-		public virtual void setPageNoticeUrl(string pageNoticeUrl)
-		{
-			this.pageNoticeUrl = pageNoticeUrl;
-		}
-
-		public virtual string getPrice()
-		{
-			return price;
-		}
-
-		public virtual void setPrice(string price)
-		{
-			this.price = price;
-		}
-
-		public virtual string getUserId()
-		{
-			return userId;
-		}
-
-		public virtual void setUserId(string userId)
-		{
-			this.userId = userId;
-		}
+		
 	}
 }
