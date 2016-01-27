@@ -12,38 +12,13 @@ namespace com.hzins.channel.api.model.req
     /// <version></version>
     public abstract class BaseReq
     {
-        private string _transNo;
+        public string transNo { get; set; }
 
-        private int _partnerId;
+        public int partnerId { get; set; }
 
-        private string _sign;
+        public string sign { get; set; }
 
-        private string _userId;
+        public string userId { get; set; }
 
-
-        public string transNo
-        {
-            set { _transNo = value; }
-            get { return _transNo; }
-        }
-
-        public int partnerId
-        {
-
-            set { _partnerId = value; }
-            get { return _partnerId; }
-        }
-
-        public string sign
-        {
-            set { _sign = value; }
-            get { return _sign; }
-        }
-
-        public string userId
-        {
-            set { _userId = value; }
-            get { return _userId; }
-        }
     }
 }

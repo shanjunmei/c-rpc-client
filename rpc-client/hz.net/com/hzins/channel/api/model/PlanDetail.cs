@@ -11,28 +11,24 @@ namespace com.hzins.channel.api.model
 	/// <version></version>
 	public class PlanDetail
 	{
-		internal string name;
+        private string _name;
 
-		internal string text;
+      
+        private string _text;
 
-		public virtual string getName()
-		{
-			return name;
-		}
+        public string name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
 
-		public virtual void setName(string name)
-		{
-			this.name = name;
-		}
 
-		public virtual string getText()
-		{
-			return text;
-		}
+        public string text
+        {
+            get { return _text; }
+            set { _text = value; }
+        }
 
-		public virtual void setText(string text)
-		{
-			this.text = text;
-		}
+		
 	}
 }

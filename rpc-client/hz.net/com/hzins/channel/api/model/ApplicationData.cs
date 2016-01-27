@@ -11,56 +11,48 @@ namespace com.hzins.channel.api.model
 	/// <version></version>
 	public class ApplicationData
 	{
-		private string applicationDate;
+        // 投保时间
+        private string _applicationDate;
 
-		private string startDate;
+       
 
-		private string endDate;
+        // 起保日期，保单的生效时间
+        private string _startDate;
 
-		private double singlePrice;
+       
 
-		// 投保时间
-		// 起保日期，保单的生效时间
-		// 终保日期，保单的失效时间
-		// 结算价，即相应保险产品的保费
-		public virtual string getApplicationDate()
-		{
-			return applicationDate;
-		}
+        // 终保日期，保单的失效时间
+        private string _endDate;
 
-		public virtual void setApplicationDate(string applicationDate)
-		{
-			this.applicationDate = applicationDate;
-		}
+       
 
-		public virtual string getStartDate()
-		{
-			return startDate;
-		}
+        // 结算价，即相应保险产品的保费
+        private double _singlePrice;
 
-		public virtual void setStartDate(string startDate)
-		{
-			this.startDate = startDate;
-		}
+     
 
-		public virtual string getEndDate()
-		{
-			return endDate;
-		}
+        public string applicationDate
+        {
+            get { return _applicationDate; }
+            set { _applicationDate = value; }
+        }
 
-		public virtual void setEndDate(string endDate)
-		{
-			this.endDate = endDate;
-		}
+        public string startDate
+        {
+            get { return _startDate; }
+            set { _startDate = value; }
+        }
 
-		public virtual double getSinglePrice()
-		{
-			return singlePrice;
-		}
+        public string endDate
+        {
+            get { return _endDate; }
+            set { _endDate = value; }
+        }
 
-		public virtual void setSinglePrice(double singlePrice)
-		{
-			this.singlePrice = singlePrice;
-		}
+        public double singlePrice
+        {
+            get { return _singlePrice; }
+            set { _singlePrice = value; }
+        }
 	}
 }
