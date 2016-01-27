@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rpc_client.rpc.client
+namespace com.hzins.rpc.client
 {
     class Md5
     {

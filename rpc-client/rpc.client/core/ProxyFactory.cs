@@ -7,7 +7,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rpc_client.rpc.client.core
+namespace com.hzins.rpc.client.core
 {
     class ProxyFactory
     {

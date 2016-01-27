@@ -2,14 +2,14 @@
 using com.hzins.channel.api.model.req;
 using com.hzins.channel.api.model.resp;
 using Newtonsoft.Json;
-using rpc_client.rpc.client.core;
+using com.hzins.rpc.client.core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rpc_client.rpc.client.test
+namespace com.hzins.rpc.client.test
 {
     class OpenApiRemoteOperationTest
     {

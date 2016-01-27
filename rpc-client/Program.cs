@@ -1,7 +1,7 @@
-﻿using rpc_client.rpc.client.test;
+﻿using com.hzins.rpc.client.test;
 //using Newtonsoft.Json;
 
-namespace rpc_client
+namespace com.hzins
 {
     class Program
     {

@@ -7,7 +7,7 @@
     <ProjectGuid>{8B6692AD-B5BB-45EA-A31E-F89713E2E201}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>rpc_client</RootNamespace>
+    <RootNamespace>com.hzins</RootNamespace>
     <AssemblyName>rpc-client</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

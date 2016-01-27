@@ -9,9 +9,9 @@ using com.hzins.channel.api.model.common;
 using com.hzins.channel.api.model.resp;
 using com.hzins.channel.api.model.req;
 using com.hzins.channel.api.model.info;
-using rpc_client.rpc.client.core;
+using com.hzins.rpc.client.core;
 
-namespace rpc_client.rpc.client
+namespace com.hzins.rpc.client
 {
     [ServiceInfo(Configure.Channel.baseUrl)]
     public interface OpenApiRemoteOperation
