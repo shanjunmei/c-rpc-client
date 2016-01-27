@@ -34,7 +34,14 @@ namespace rpc_client.rpc.client.core
                serviceInfo= method.DeclaringType.GetCustomAttribute<ServiceInfo>();
             }
             string baseInfo = serviceInfo.value;
-            string response=remoteInvoke(baseInfo+command, param[0]);
+           int pc= method.GetParameters().Length;
+           object actualParam = param;
+           if (pc == 1)
+           {
+               actualParam=param[0];
+           }
+
+           string response = remoteInvoke(baseInfo + command, actualParam);
 
            
             Type returnType=method.ReturnType;
