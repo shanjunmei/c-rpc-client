@@ -18,7 +18,7 @@ namespace rpc_client.rpc.client.core
             MethodInfo method = invocation.Method;
             
             string command = method.Name;
-            Api api=method.GetCustomAttribute<Api>();
+            Command api=method.GetCustomAttribute<Command>();
             if (api != null) {
                 if (!String.IsNullOrEmpty(api.command)) {
                     command = api.command;

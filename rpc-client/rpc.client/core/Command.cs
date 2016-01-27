@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace rpc_client.rpc.client.core
 {
-    public  class Api : Attribute
+    public  class Command : Attribute
     {
         public string command;
-        public Api(string command)
+        public Command(string command)
         {
             this.command = command;
         }
