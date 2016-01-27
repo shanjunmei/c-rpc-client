@@ -8,7 +8,7 @@ namespace rpc_client.rpc.client.core
 {
     public  class Api : Attribute
     {
-        public string command { get; }
+        public string command;
         public Api(string command)
         {
             this.command = command;

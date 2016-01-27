@@ -8,7 +8,7 @@ namespace rpc_client.rpc.client.core
 {
     class ServiceInfo : Attribute
     {
-        public string value { get; }
+        public string value;
 
         public ServiceInfo(string value) {
             this.value = value;
